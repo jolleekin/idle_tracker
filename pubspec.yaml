@@ -1,0 +1,11 @@
+name: idle_tracker
+description: A tiny package that tracks idleness in a web application.
+version: 0.0.1
+homepage: https://github.com/jolleekin/idle_tracker
+author: mhoang <jolleekin@outlook.com>
+
+environment:
+  sdk: '>=1.20.1 <2.0.0'
+
+dev_dependencies:
+  browser: any
