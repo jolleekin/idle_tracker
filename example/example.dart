@@ -3,7 +3,7 @@ import 'dart:html';
 import 'package:idle_tracker/idle_tracker.dart';
 
 void main() {
-  new IdleTracker(
+  IdleTracker(
       timeout: const Duration(seconds: 5),
       periodicIdleCall: true,
       startsAsIdle: true,
@@ -19,7 +19,7 @@ void log(String message) {
   if (output.children.length >= 40) {
     output.innerHtml = '';
   }
-  output.append(new DivElement()..text = message);
+  output.append(DivElement()..text = message);
 }
 
 void onActive() {

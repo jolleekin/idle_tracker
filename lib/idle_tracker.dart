@@ -82,8 +82,8 @@ class IdleTracker {
 
   void _createTimer() {
     _timer = periodicIdleCall
-        ? new Timer.periodic(timeout, _onTimeout)
-        : new Timer(timeout, _onTimeout);
+        ? Timer.periodic(timeout, _onTimeout)
+        : Timer(timeout, _onTimeout);
   }
 
   void _onTimeout([_]) {
